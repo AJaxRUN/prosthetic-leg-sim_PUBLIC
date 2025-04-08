@@ -1,0 +1,33 @@
+# Environment to use for the simulation:
+#   - "gym_prosthetic"            -       default
+#   - "gym_hopper"
+#   - "dm_control_hopper"
+#   - "gym_prosthetic_suspended"
+env: gym_prosthetic_suspended
+
+# Mode of operation: 
+#   - "train" for training the RL agent - default
+#   - "test" for evaluating the agent
+mode: train
+
+# Path to the pre-trained agent model
+agent_model: agent/PPO_suspended.zip
+
+# Resume training using the model specified in agent_model 
+resume_training: False
+
+# Whether to clear existing logs before running (true/false)
+clear_logs: True
+
+# Matlab data path
+mat_data: data/Kevin_1.mat
+
+# Seed value for stable-baselines3 models
+seed: 7
+
+# ToDo
+# 1. Learning rate critic and actor
+# 2. Reduce the length of data to 1/2 stride.
+# 3. Increase or Decrease neural net paramters.
+# 4. Revisit a sample baselines example.
+# 5. Changing reward function -> minimise torque and velocity error
