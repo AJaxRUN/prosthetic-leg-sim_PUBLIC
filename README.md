@@ -1,4 +1,7 @@
 # Amputee-Prosthetic Leg Simulation Environment
+![Alt Text](./docs/SR.gif)
+![image info](./docs/leg.png)
+![image info](./docs/SS_2.png)
 
 ## Prerequisites 
 You can use Conda or Pyenv, note that since requirements.txt is generated for pip (Pyenv),
@@ -76,7 +79,6 @@ the procedure for pyenv is given below.
    ```
    pip install -r requirements.txt
    ```
-
 ## Running the simulation
 You can refer and modify config.yaml for the possible set of args - for running the simulation in different modes:
 
